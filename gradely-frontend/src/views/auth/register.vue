@@ -1,7 +1,7 @@
 <template>
     <div>
         register
-        
+        Hello
     </div>
 </template>
 
