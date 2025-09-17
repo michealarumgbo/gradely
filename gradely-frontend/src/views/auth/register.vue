@@ -33,10 +33,11 @@
                     <div class="flex ">
                         <label for="dept" class="font-[500] mr-[10px] mb-[5px]">Department:</label>
                     <select name="dept" id="dept" class="mb-[5px] w-[50%] outline-none border border-gray-300 rounded-[3px] cursor-pointer h-[25px] text-[13px]">
-                        <option value="CSC">Computer Science</option>
-                        <option value="EEE">Elect Engineering</option>
-                        <option value="BCHEM">Bio Chem</option>
-                        <option value="CHEM">Chemistry</option>
+                        <option value="CEE">Computer Engineering</option>
+                        <option value="LAW">Law</option>
+                        <option value="MED">Medicine and Surgery</option>
+                        <option value="MAC">Mass Communication</option>
+                        <option value="ELS">English & Literary Studies</option>
                     </select>
                     </div>
                     <label for="reg-no" class="font-[500] mb-[5px]">Reg Number:</label>
