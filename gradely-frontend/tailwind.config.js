@@ -7,8 +7,8 @@ export default {
       {
         gradely: {
           neutral: "#3d4451",
-          "base-100": "#ffffff", // 👈 background
-          "base-200": "#f9fafb", // slightly lighter backgrounds
+          "base-100": "#ffffff",
+          "base-200": "#f9fafb",
           "base-300": "#e5e7eb",
         },
       },

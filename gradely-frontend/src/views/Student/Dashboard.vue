@@ -23,28 +23,11 @@
 import ResultList from '../../components/resultList.vue';
 import SideNav from '../../components/sideNav.vue';
 import TopNav from '../../components/topNav.vue';
+import { usestudentLinkItemsStore } from '../../stores/studentLinkItems';
+
+const { linkItems } = usestudentLinkItemsStore();
 
 
-const linkItems = [
-    {
-        id: 1,
-        linkName: 'Dashboard',
-        href: '/student/dashboard',
-        icon: 'fa-solid fa-gauge',
-    },
-    {
-        id: 2,
-        linkName: 'Transcript',
-        href: '/student/transcript',
-        icon: 'fa-solid fa-certificate',
-    },
-    {
-        id: 1,
-        linkName: 'Settings',
-        href: '/student/settings',
-        icon: 'fa-solid fa-gear',
-    },
-]
 
 const resultItems = [
     {

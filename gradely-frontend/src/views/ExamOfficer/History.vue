@@ -1,13 +1,34 @@
 <template>
-    <div>
-        <h1>results history</h1>
+    <div class="flex  w-full h-[100vh] bg-gray-200">
+        <div class="w-[0.0001%]  h-full md:w-auto ">
+            <SideNav :linkItems="linkItems" />
+
+        </div>
+        <!-- Main Content -->
+        <div class="h-full w-full flex flex-col items-center md:w-full">
+            <TopNav />
+
+            <div class="bg-white min-h-[85%] w-[94%] mt-[10px] px-[20px] rounded-md py-[30px]">
+                <h1 class="text-[22px] font-[500]">Results History</h1>
+
+            </div>
+
+
+        </div>
     </div>
 </template>
 
 <script setup>
+import SideNav from '../../components/sideNav.vue';
+import TopNav from '../../components/topNav.vue';
+import { useofficerLinkItemsStore } from '../../stores/officerLinkItems';
+
+const { linkItems } = useofficerLinkItemsStore();
+
+
+
+
 
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style scoped></style>

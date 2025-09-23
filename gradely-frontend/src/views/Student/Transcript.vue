@@ -3,10 +3,15 @@
         <div class="w-[0.0001%]  h-full md:w-auto ">
             <SideNav :linkItems="linkItems" />
         </div>
+
         <!-- Main Content -->
-        <div class="h-full w-full md:w-full">
+        <div class="h-full w-full flex flex-col items-center md:w-full">
             <TopNav />
-            Sup
+
+            <div class="bg-white min-h-[85%] w-[94%] mt-[10px] px-[20px] rounded-md py-[30px]">
+                <h1 class="text-[22px] font-[500]">My Transcript</h1>
+
+            </div>
 
 
         </div>
@@ -16,28 +21,10 @@
 <script setup>
 import SideNav from '../../components/sideNav.vue';
 import TopNav from '../../components/topNav.vue';
+import { usestudentLinkItemsStore } from '../../stores/studentLinkItems';
 
+const { linkItems } = usestudentLinkItemsStore();
 
-const linkItems = [
-    {
-        id: 1,
-        linkName: 'Dashboard',
-        href: '/student/dashboard',
-        icon: 'fa-solid fa-gauge',
-    },
-    {
-        id: 2,
-        linkName: 'Transcript',
-        href: '/student/transcript',
-        icon: 'fa-solid fa-certificate',
-    },
-    {
-        id: 1,
-        linkName: 'Settings',
-        href: '/student/settings',
-        icon: 'fa-solid fa-gear',
-    },
-]
 
 </script>
 
