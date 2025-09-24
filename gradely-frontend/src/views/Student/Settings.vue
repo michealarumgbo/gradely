@@ -5,7 +5,7 @@
         </div>
         <!-- Main Content -->
         <div class="h-full w-full flex flex-col items-center md:w-full">
-            <TopNav />
+            <TopNav user="student" />
 
             <div class="bg-white min-h-[85%] w-[94%] mt-[10px] px-[20px] rounded-md py-[30px] overflow-auto">
                 <h1 class="text-[22px] font-[500]">My Settings</h1>

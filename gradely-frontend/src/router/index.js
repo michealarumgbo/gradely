@@ -30,6 +30,7 @@ import StudentDashboard from "../views/Student/Dashboard.vue";
 import MyResult from "../views/Student/MyResult.vue";
 import Transcript from "../views/Student/Transcript.vue";
 import StudentSettings from "../views/Student/Settings.vue";
+import NotFound from "../views/NotFound.vue";
 
 const routeLists = [
   { path: "/", redirect: "/login" },
@@ -64,6 +65,9 @@ const routeLists = [
   { path: "/student/my-result", component: MyResult },
   { path: "/student/transcript", component: Transcript },
   { path: "/student/settings", component: StudentSettings },
+
+  // 404 Page
+  { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
 ];
 
 const router = createRouter({
